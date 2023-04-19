@@ -50,11 +50,13 @@ public static class Config
                 {
                     "https://localhost:5002/signout-callback-oidc"
                 },
+                AllowOfflineAccess = true,
                 AllowedScopes = new List<string>
                 {
                     IdentityServerConstants.StandardScopes.OpenId,
                     IdentityServerConstants.StandardScopes.Profile,
-                    "verification"
+                    "verification",
+                    "api1"
                 }
             }
         };
